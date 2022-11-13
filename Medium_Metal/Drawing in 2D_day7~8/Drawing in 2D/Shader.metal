@@ -23,8 +23,13 @@ struct VertexOut{
 //    return float4(position,0,1);
 //}
 // *를 없애서 버퍼의 모든 데이터를 가져오는 것이 아니라 layout으로 설정한 만큼만 가져옴
-vertex VertexOut vertex_main(VertexIn in [[stage_in]]){
-    VertexOut out {float4(in.position,0,1),in.color};
+// Day 8 vertex Shader
+//vertex VertexOut vertex_main(VertexIn in [[stage_in]]){
+//    VertexOut out {float4(in.position,0,1),in.color};
+//    return out;
+//}
+vertex VertexOut vertex_main(VertexIn in [[stage_in]],constant float2 &positionOffset [[buffer(1)]]){
+    VertexOut out {float4(in.position+positionOffset,0,1),in.color};
     return out;
 }
 fragment float4 fragment_main(VertexOut in [[stage_in]]){
