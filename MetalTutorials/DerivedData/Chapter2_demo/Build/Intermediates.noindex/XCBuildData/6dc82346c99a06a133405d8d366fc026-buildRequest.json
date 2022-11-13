@@ -1,0 +1,91 @@
+{
+  "_buildCommand2" : {
+    "command" : "preview"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "PLAYGROUND-PRODUCT:Chapter2_demo_Sources-PLAYGROUND-TARGET:/Users/kimtaeyoon/Documents/MetalCamp/Chapter2_demo.playground",
+      "parameters" : {
+        "action" : "build",
+        "activeArchitecture" : "arm64",
+        "activeRunDestination" : {
+          "disableOnlyActiveArch" : false,
+          "platform" : "macosx",
+          "sdk" : "macosx12.3",
+          "sdkVariant" : "macos",
+          "supportedArchitectures" : [
+            "arm64e",
+            "arm64",
+            "x86_64"
+          ],
+          "targetArchitecture" : "arm64"
+        },
+        "arenaInfo" : {
+          "buildIntermediatesPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Intermediates.noindex",
+          "buildProductsPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Products",
+          "derivedDataPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData",
+          "indexDataStoreFolderPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Index.noindex/DataStore",
+          "indexEnableDataStore" : true,
+          "indexPCHPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Index.noindex/PrecompiledHeaders",
+          "pchPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Intermediates.noindex/PrecompiledHeaders"
+        },
+        "configurationName" : "Debug",
+        "overrides" : {
+          "synthesized" : {
+            "table" : {
+              "DSTROOT" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Intermediates.noindex/Playgrounds/Chapter2_demo/ReleaseProducts",
+              "ENABLE_PREVIEWS" : "YES",
+              "OBJROOT" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Intermediates.noindex/Playgrounds/Chapter2_demo/Intermediates.noindex",
+              "SYMROOT" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Intermediates.noindex/Playgrounds/Chapter2_demo/Products"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "containerPath" : "/Users/kimtaeyoon/Documents/MetalCamp/Chapter2_demo.playground",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Products",
+      "derivedDataPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/kimtaeyoon/Documents/MetalCamp/DerivedData/Chapter2_demo/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
