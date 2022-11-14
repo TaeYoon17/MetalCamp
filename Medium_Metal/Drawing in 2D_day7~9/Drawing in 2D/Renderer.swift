@@ -115,7 +115,7 @@ class Renderer: NSObject,MTKViewDelegate{
         let speedFactor = 3.0
         let rotationAngle = Float(fmod(speedFactor * time, .pi * 2))
         let rotationMagnitude: Float = 0.1
-        var positionOffset = rotationMagnitude * SIMD2<Float>(cos(rotationAngle),sin(rotationAngle))
+        var positionOffset: SIMD2<Float> = rotationMagnitude * SIMD2<Float>(cos(rotationAngle),sin(rotationAngle))
         
         // 값을 상수 버퍼에 넣어두기
         self.constantsBufferOffset = frameIndex * constantsStride
