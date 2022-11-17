@@ -8,6 +8,13 @@
 import Foundation
 import MetalKit
 class SimpleMesh{
+    /// 메시에 들어가는 정보
+    /// vertexDescriptor
+    /// vertexBuffer
+    /// vertexCount
+    /// primitiveType
+    /// indexBuffer
+    /// indexType
     static private var defaultVertexDescriptor : MTLVertexDescriptor{
         let vertexDescriptor = MTLVertexDescriptor()
         vertexDescriptor.attributes[0].format = .float2
