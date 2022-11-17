@@ -15,6 +15,9 @@
 		63027BC2292614C700614235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63027BC0292614C700614235 /* LaunchScreen.storyboard */; };
 		63027BCA2926155E00614235 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63027BC92926155E00614235 /* Renderer.swift */; };
 		63027BCC2926170A00614235 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63027BCB2926170A00614235 /* Shader.metal */; };
+		634B5D5C29262F1800590A74 /* simpleMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B5D5B29262F1800590A74 /* simpleMesh.swift */; };
+		634B5D5E29262F6B00590A74 /* MdlMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B5D5D29262F6B00590A74 /* MdlMesh.swift */; };
+		634B5D60292639D900590A74 /* SIMD_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B5D5F292639D900590A74 /* SIMD_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		63027BC3292614C700614235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63027BC92926155E00614235 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		63027BCB2926170A00614235 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		634B5D5B29262F1800590A74 /* simpleMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleMesh.swift; sourceTree = "<group>"; };
+		634B5D5D29262F6B00590A74 /* MdlMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MdlMesh.swift; sourceTree = "<group>"; };
+		634B5D5F292639D900590A74 /* SIMD_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMD_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				63027BC3292614C700614235 /* Info.plist */,
 				63027BC92926155E00614235 /* Renderer.swift */,
 				63027BCB2926170A00614235 /* Shader.metal */,
+				634B5D5B29262F1800590A74 /* simpleMesh.swift */,
+				634B5D5D29262F6B00590A74 /* MdlMesh.swift */,
+				634B5D5F292639D900590A74 /* SIMD_Extension.swift */,
 			);
 			path = "mdl&mtkmesh_day12";
 			sourceTree = "<group>";
@@ -144,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634B5D60292639D900590A74 /* SIMD_Extension.swift in Sources */,
+				634B5D5C29262F1800590A74 /* simpleMesh.swift in Sources */,
 				63027BCA2926155E00614235 /* Renderer.swift in Sources */,
 				63027BBA292614C600614235 /* ViewController.swift in Sources */,
+				634B5D5E29262F6B00590A74 /* MdlMesh.swift in Sources */,
 				63027BB6292614C600614235 /* AppDelegate.swift in Sources */,
 				63027BCC2926170A00614235 /* Shader.metal in Sources */,
 				63027BB8292614C600614235 /* SceneDelegate.swift in Sources */,

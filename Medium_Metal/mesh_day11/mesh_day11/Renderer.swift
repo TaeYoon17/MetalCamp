@@ -148,6 +148,7 @@ extension Renderer:MTKViewDelegate{
                                                        indexBuffer: indexBuffer,
                                                        indexBufferOffset: 0)
         }
+        
         commandEncoder.endEncoding()
         commandBuffer.present(view.currentDrawable!)
         commandBuffer.commit()

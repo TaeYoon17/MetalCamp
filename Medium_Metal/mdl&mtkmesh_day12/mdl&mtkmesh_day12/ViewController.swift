@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             mtkView.topAnchor.constraint(equalTo: self.view.topAnchor),
             mtkView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
+        self.renderer = Renderer(device: device, view: mtkView)
     }
 
 

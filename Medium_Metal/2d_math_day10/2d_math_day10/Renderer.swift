@@ -178,7 +178,6 @@ extension Renderer: MTKViewDelegate{
         let nowOffsetPointer = self.framebuffer.buffer.contents().advanced(by: self.framebuffer.nowOffset)
         
         nowOffsetPointer.copyMemory(from: &transformMatrix, byteCount: self.framebuffer.dataSize)
-        
     }
      
 //    func updateFrames(){
