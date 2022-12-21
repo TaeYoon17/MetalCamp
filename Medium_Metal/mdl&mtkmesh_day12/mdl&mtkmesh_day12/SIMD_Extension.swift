@@ -11,6 +11,11 @@ extension simd_float4x4 {
     init(orthographicProjectionWithLeft left: Float, top: Float,
          right: Float, bottom: Float, near: Float, far: Float)
     {
+        ///left = -0.5 , right = 0.5
+        ///top = 0.5, bottom = -0.5
+        /// sx = 2
+        /// sy = 2
+        /// 1/2
         let sx = 2 / (right - left)
         let sy = 2 / (top - bottom)
         let sz = 1 / (near - far)
@@ -30,4 +35,7 @@ extension simd_float4x4 {
         temp.columns.3[3] = 1
         return temp
     }
+}
+func align(_ value: Int, upTo alignment: Int) -> Int {
+    return ((value + alignment - 1) / alignment) * alignment
 }
