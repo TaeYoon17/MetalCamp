@@ -59,7 +59,7 @@ class Renderer:NSObject{
         makePipeline()
     }
     
-    func makeResources(){
+    func makeResources(){// MDL 정점 정보는 Normal과 Position만 가져온다.
         let allocator = MTKMeshBufferAllocator(device: device)
         let vertexDescriptor: MDLVertexDescriptor = {
             let descriptor = MDLVertexDescriptor()
@@ -178,13 +178,13 @@ extension Renderer:MTKViewDelegate{
         
         let aspectRatio = Float(view.drawableSize.width / view.drawableSize.height)
         let projectionMatrix = simd_float4x4(perspectiveProjectionFoVY: .pi/3, aspectRatio: aspectRatio, near: 0.01, far: 100)
-        let yAxis = SIMD3<Float>(0,1,0)
+        let yAxis = SIMD3<Float>(0,0,1)
         let planetRadius: Float = 0.3
-        let planetOrbitalRadius: Float = 2
+        let planetOrbitalRadius: Float = 3
         planetNode.transform = simd_float4x4(rotateAbout: yAxis, byAngle: t) * simd_float4x4(translate: SIMD3<Float>(planetOrbitalRadius,0,0)) * simd_float4x4(scale: SIMD3<Float>(repeating: planetRadius))
         
-        let moonRadius: Float = 0.2
-        let moonOrbitalRadius: Float = 1
+        let moonRadius: Float = 0.25
+        let moonOrbitalRadius: Float = 2
         moonNode.transform = simd_float4x4(rotateAbout: yAxis, byAngle: 2 * t) * simd_float4x4(translate: SIMD3<Float>(moonOrbitalRadius,0,0)) * simd_float4x4(scale: SIMD3<Float>(repeating: moonRadius))
         
         nodes.enumerated().forEach { (objectIndex,node) in
